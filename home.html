@@ -7,7 +7,7 @@
  <meta charset="='UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
- <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+ <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
  <title>Alessandro's Porfolio Website</title>
 
 </head>
@@ -98,7 +98,7 @@
               165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
               129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
               -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-              <image class="home__blob-img" x="12" y="18" xlink:href="../assets/img/perfil.png"/>
+              <image class="home__blob-img" x="12" y="18" xlink:href="./assets/img/perfil.png"/>
             </g>
           </svg>
 
@@ -131,7 +131,7 @@
     <span class="section__subtitle">My introduction</span>
 
     <div class="about__container container grid">
-      <img src="../assets/img/about.jpg" alt="" class="about__img">
+      <img src="./assets/img/about.jpg" alt="" class="about__img">
 
       <div class="about__data">
         <p class="about__description">Junior web developer, with a fullstack education background and the heart beating for the frontend</p>
@@ -154,7 +154,7 @@
         </div>
 
         <div class="about__buttons">
-          <a download="" href="../assets/pdf/ALESSANDRO-resume.pdf" class="button button--flex">Download CV
+          <a download="" href="./assets/pdf/ALESSANDRO-resume.pdf" class="button button--flex">Download CV
             <i class="uil uil-file-download button__icon"></i>
           </a>
         </div>
@@ -307,15 +307,15 @@
     <h2 class="section__title">Qualification</h2>
     <span class="section__subtitle">My personal journey</span>
 
-    <div class="qualification_container container">
+    <div class="qualification__container container">
 
       <div class="qualification__tabs">
-        <div class="qualification__button button--flex">
+        <div class="qualification__button button--flex qualification__active" data-target='#education'>
           <i class="uil uil-graduation-cap qualification__icon"></i>
           Education
         </div>
 
-        <div class="qualification__button button--flex">
+        <div class="qualification__button button--flex" data-target='#work'>
           <i class="uil uil-bag qualification__icon"></i>
           Work
         </div>
@@ -325,11 +325,10 @@
 
         <!-- QUALIFICATION CONTENT 1-->
 
-        <div class="qualification__content">
+        <div class="qualification__content qualification__active" data-content id="education">
 
           <!-- QUALIFICATION 1 -->
           <div class="qualification__data">
-            <div></div>
 
             <div>
               <h3 class="qualification__title">Fullstack Web Development Bootcamp</h3>
@@ -375,7 +374,7 @@
               <span class="qualificiation__subtitle">CEU San Pablo University Madrid</span>
               <div class="qualification__calendar">
                 <i class="uil uil-calendar-alt"></i>
-                2015-206
+                2015 - 206
               </div>
             </div>
 
@@ -383,11 +382,17 @@
               <span class="qualification__rounder"></span>
               <span class="qualification__line"></span>
             </div>
-
           </div>
 
           <!-- QUALIFICATION 4 -->
           <div class="qualification__data">
+            <div></div>
+
+            <div>
+              <span class="qualification__rounder"></span>
+              <!-- <span class="qualification__line"></span> -->
+            </div>
+
 
             <div>
               <h3 class="qualification__title">Bachelor Degree - Asian Languages, Markets and Cultures</h3>
@@ -397,23 +402,17 @@
                 2010 - 2014
               </div>
             </div>
-
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-
           </div>
-
         </div>
+
+
 
         <!-- QUALIFICATION CONTENT 2-->
 
-        <div class="qualification__content">
+        <div class="qualification__content" data-content id="work">
 
           <!-- QUALIFICATION 1 -->
           <div class="qualification__data">
-            <div></div>
 
             <div>
               <h3 class="qualification__title">Senior Booking Success Specialist</h3>
@@ -459,7 +458,7 @@
               <span class="qualificiation__subtitle">Cologne Downtown Hostel, Cologne</span>
               <div class="qualification__calendar">
                 <i class="uil uil-calendar-alt"></i>
-                2015-206
+                2015 - 2016
               </div>
             </div>
 
@@ -472,6 +471,12 @@
 
           <!-- QUALIFICATION 4 -->
           <div class="qualification__data">
+            <div></div>
+
+            <div>
+              <span class="qualification__rounder"></span>
+              <!-- <span class="qualification__line"></span> -->
+            </div>
 
             <div>
               <h3 class="qualification__title">Front Office Agent</h3>
@@ -482,25 +487,36 @@
               </div>
             </div>
 
-            <div>
-              <span class="qualification__rounder"></span>
-              <span class="qualification__line"></span>
-            </div>
-
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
 
+<!-- SERVICES -->
+
+  <section>
+    <h2 class="section__title">Services</h2>
+    <span class="section__subtitle">what I offer</span>
+
+    <div class="services_container container grid">
+
+     <!-- SERVICES 1 -->
+
+     <div class="services__content"></div>
+
+    </div>
+  </section>
+
+<!-- PORTFOLIO -->
+
+<!-- PROJECT IN MIND -->
 
 </main>
 
 
 
-<script src="../assets/js/main.js">
+<script src="./assets/js/main.js">
 </script>
 
 </body>
