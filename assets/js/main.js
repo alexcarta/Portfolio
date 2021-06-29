@@ -32,6 +32,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content');
 const skillsHeader = document.querySelectorAll(".skills__header")
@@ -44,6 +45,8 @@ function toggleSkills(){
   }
   if(itemClass === 'skills__content skills__close'){
     this.parentNode.className = 'skills__content skills__open'
+  } else if (itemClass === 'skills__content skills__open'){
+    this.parentNode.className = 'skills__content skills__close'
   }
 }
 
@@ -78,6 +81,28 @@ tabs.forEach(tab => {
 });
 
 /*==================== SERVICES MODAL ====================*/
+
+const modalViews = document.querySelectorAll('.services__modal');
+const modalBtns = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal-close');
+
+let modal = function(modalClick){
+  modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener('click', () => {
+    modal(i)
+  })
+})
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal')
+    })
+  })
+})
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
